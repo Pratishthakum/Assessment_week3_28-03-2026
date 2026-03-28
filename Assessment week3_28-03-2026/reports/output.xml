@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.13.12 on win32)" generated="2026-03-28T15:12:19.738503" rpa="false" schemaversion="5">
+<suite id="s1" name="Task1" source="C:\Python\Testing\Assessment week3_28-03-2026\Task1.robot">
+<test id="s1-t1" name="handling Task 1" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-28T15:12:20.101078" level="INFO">Opening browser 'chrome' to base url 'https://www.myntra.com/'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-28T15:12:20.099687" elapsed="6.617097"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-28T15:12:26.717278" elapsed="0.056371"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-03-28T15:12:26.774729" level="INFO">navigated to myntra</msg>
+<arg>navigated to myntra</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-03-28T15:12:26.774074" elapsed="0.000813"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>navigated to myntra</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-28T15:12:26.775347" elapsed="0.000666"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-28T15:12:29.778249" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-28T15:12:26.776621" elapsed="3.001945"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2026-03-28T15:12:29.779535" level="INFO">Simulating Mouse Over on element 'xpath=(//header[@id="desktop-header-cnt"]/descendant::div[@class="desktop-navLink"])[2]/a'.</msg>
+<arg>xpath=(//header[@id="desktop-header-cnt"]/descendant::div[@class="desktop-navLink"])[2]/a</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2026-03-28T15:12:29.779049" elapsed="0.354145"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-28T15:12:33.134964" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-28T15:12:30.133837" elapsed="3.001350"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-28T15:12:33.136466" level="INFO">Clicking element 'xpath=((//div[@class="desktop-categoryContainer"])[2]/descendant::li[@class="desktop-oddColumnContent"])[1]/descendant::ul/child::li[9]/a'.</msg>
+<arg>xpath=((//div[@class="desktop-categoryContainer"])[2]/descendant::li[@class="desktop-oddColumnContent"])[1]/descendant::ul/child::li[9]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-28T15:12:33.135921" elapsed="3.569389"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath=//div[@class="vertical-filters-filters header-container"]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-03-28T15:12:36.705751" elapsed="0.301185"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-28T15:12:40.008218" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-28T15:12:37.007462" elapsed="3.000934"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-28T15:12:40.009015" level="INFO">Clicking element 'xpath=(//div[@class="vertical-filters-filters"])[2]/descendant::li[@class="colour-listItem"][3]/descendant::span[@class="colour-label colour-colorDisplay"]'.</msg>
+<arg>xpath=(//div[@class="vertical-filters-filters"])[2]/descendant::li[@class="colour-listItem"][3]/descendant::span[@class="colour-label colour-colorDisplay"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-28T15:12:40.008745" elapsed="0.199280"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-28T15:12:43.210488" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-28T15:12:40.209108" elapsed="3.001851"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2026-03-28T15:12:43.328719" level="INFO">${brand_name} = PARTHVI</msg>
+<var>${brand_name}</var>
+<arg>xpath=(//div[@class="product-productMetaInfo"])[4]/descendant::h3</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-28T15:12:43.212117" elapsed="0.116731"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${brand_name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-28T15:12:43.329579" elapsed="0.001228"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-28T15:12:46.333379" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-28T15:12:43.331550" elapsed="3.002221"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2026-03-28T15:12:46.409080" level="INFO">${product_name} = Ready to Wear Lehenga Blouse With Dupatta</msg>
+<var>${product_name}</var>
+<arg>xpath=(//div[@class="product-productMetaInfo"])[4]/descendant::h4[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-28T15:12:46.334931" elapsed="0.074290"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${product_name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-28T15:12:46.410007" elapsed="0.001359"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-28T15:12:46.412499" elapsed="2.389930"/>
+</kw>
+<status status="PASS" start="2026-03-28T15:12:20.097691" elapsed="28.705917"/>
+</test>
+<doc>Task1</doc>
+<status status="PASS" start="2026-03-28T15:12:19.740328" elapsed="29.066151"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Task1" id="s1" pass="1" fail="0" skip="0">Task1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
